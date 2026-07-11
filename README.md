@@ -8,10 +8,10 @@
 |---|---|---|---|---|
 | [Определение стоимости автомобилей](car-price-prediction.ipynb) | Регрессия: предсказание рыночной цены авто по характеристикам | pandas, sklearn, LightGBM, XGBoost | RMSE | **1405** (LightGBM) |
 | [Прогнозирование заказов такси](taxi-orders-forecasting.ipynb) | Временные ряды: прогноз количества заказов на следующий час | pandas, statsmodels (ARIMA), sklearn, LightGBM | RMSE | **44.6** при пороге ≤ 48 (LightGBM) |
-| [Классификация токсичных комментариев](toxic-comments-classification.ipynb) | NLP: бинарная классификация комментариев | nltk, TF-IDF, sklearn, PyTorch, transformers (BERT) | F1 | **0.79** (TF-IDF + LogReg); BERT-эмбеддинги — эксперимент на подвыборке |
+| [Классификация токсичных комментариев](toxic-comments-classification.ipynb) | NLP: бинарная классификация комментариев | nltk, TF-IDF, sklearn, PyTorch, transformers (BERT) | F1 | **0.78** (TF-IDF + LogReg); BERT-эмбеддинги — эксперимент на подвыборке |
 | [Определение возраста по фото](customer-age-prediction-cv.ipynb) | CV: регрессия возраста по фотографии | TensorFlow / Keras, ResNet50 | MAE | **6.57** при пороге < 8 (обучение выполнялось в GPU-тренажёре) |
 | [Отток клиентов банка](bank-customer-churn.ipynb) | Классификация с дисбалансом классов: прогноз ухода клиента | pandas, sklearn (RF, SVC, LogReg, KNN, NB, LDA) | F1 / AUC-ROC | **F1 = 0.61, AUC-ROC = 0.85** (SVC) при пороге F1 ≥ 0.59 |
-| [Прогноз температуры стали](steel-temperature-prediction.ipynb) | Регрессия: предсказание конечной температуры плавки для экономии электроэнергии | pandas, sklearn, LightGBM, mlxtend | MAE | см. ноутбук (LightGBM) |
+| [Прогноз температуры стали](steel-temperature-prediction.ipynb) | Регрессия: предсказание конечной температуры плавки для экономии электроэнергии | pandas, sklearn, LightGBM, mlxtend | MAE | **6.60** (LightGBM на очищенных данных) |
 | [Восстановление золота из руды](gold-recovery-prediction.ipynb) | Регрессия: коэффициент восстановления золота на двух стадиях очистки | pandas, sklearn | sMAPE | **9.25** против 9.44 у константного baseline (RandomForest) |
 | [Выбор локации для скважины](oil-well-location.ipynb) | Регрессия + оценка рисков (bootstrap): выбор региона добычи | pandas, sklearn, bootstrap | Прибыль / риск | Регион 2: средняя прибыль **537 млн руб.**, риск убытков 0.9% |
 | [Рекомендация тарифов](mobile-tariff-recommendation.ipynb) | Классификация: подбор мобильного тарифа | pandas, sklearn | Accuracy | **0.81** при пороге ≥ 0.75 (RandomForest) |
